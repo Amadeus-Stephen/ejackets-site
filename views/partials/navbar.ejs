@@ -1,37 +1,73 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Jackets</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-light primebg">
+    <button class="btn primebg " class="openbtn" onclick="openNav()">
+    <span class=" primecolor">Jacket </span>
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Games</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Roster</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Socials</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">YouTube</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Twitch</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Instagram</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Twitter</a>
-        </div>
-      </li>
-    </ul>
-  </div>
 </nav>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="card primebg">
+  	<div class="card-header" id="headingTwo">
+      	<h5 class="mb-0">
+        	<button class="btn btn-link collapsed" >
+				Home 
+        	</button>
+    	</h5>
+	</div>
+  	<div id="accordion">
+  		<div class="card primebg">
+    		<div class="card-header" id="headingTwo">
+      			<h5 class="mb-0">
+        			<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          				Teams And Rosters
+        			</button>
+      			</h5>
+    		</div>
+    		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      			<div class="card-body">
+        			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      			</div>
+    		</div>
+  		</div>
+  		<div class="card primebg">
+    		<div class="card-header" id="headingThree">
+      			<h5 class="mb-0">
+        			<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          				Other Socials
+        			</button>
+      			</h5>
+    		</div>
+    		<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      			<div class="card-body">
+        			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      			</div>
+    		</div>
+		  </div>
+		<div class="card primebg">
+  			<div class="card-header" id="headingTwo">
+      			<h5 class="mb-0">
+        			<button class="btn btn-link collapsed" >
+						About Us
+        			</button>
+    			</h5>
+			</div>
+		</div>
+		<div class="card primebg">
+  			<div class="card-header" id="headingTwo">
+      			<h5 class="mb-0">
+        			<button class="btn btn-link collapsed" >
+						More Jackets
+        			</button>
+    			</h5>
+			</div>
+		</div>
+	</div>
+<script>
+  function openNav() {
+  document.getElementById("mySidebar").style.width = "20rem";
+  document.getElementById("main").style.marginLeft = "20rem";
+}
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
