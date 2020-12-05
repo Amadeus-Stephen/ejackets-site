@@ -1,10 +1,17 @@
+.animate-bottom{position: relative;animation:animatebottom 2s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
 .bknorm {
-  background-image: url("/public/burg.png");
+  background-image: url("burg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
 }
 .sidebar {
   height: 100%; /* 100% Full-height */

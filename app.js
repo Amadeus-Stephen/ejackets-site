@@ -1,11 +1,12 @@
 const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
-
+const backgroud = require("./public/burg.png")
 const app = express()
 const port = 5000
 
 // Static Files
-app.use(__dirname + "public")
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + "public"))
 app.use(express.static('public'))
 app.use('/css', express.static(__dirname + 'public/css'))
 
@@ -16,7 +17,7 @@ app.set('view engine', 'ejs')
 
 // Routes
 app.get('/', (req, res) => {
-    res.render('index', { title: 'Home Page'})
+    res.render('index', { title: 'Home Page'  , image:backgroud})
 })
 
 app.get('/about', (req, res) => {
