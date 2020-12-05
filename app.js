@@ -5,6 +5,7 @@ const app = express()
 const port = 5000
 
 // Static Files
+app.use(__dirname + "public")
 app.use(express.static('public'))
 app.use('/css', express.static(__dirname + 'public/css'))
 
